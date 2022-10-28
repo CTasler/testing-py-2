@@ -22,7 +22,8 @@ def example_data():
     """Create example data for the test database."""
     # FIXME: write a function that creates a game and adds it to the database.
    # print("FIXME")
-    test_game = Game(name="Jenga", description="pull out blocks without knocking tower over.")
+    test_game = Game(name="Jenga", 
+                     description="pull out blocks without knocking tower over.")
 
     db.session.add(test_game)
     db.session.commit()
